@@ -1,12 +1,12 @@
 const randomNum = () => {
-  const max = 6;
-  const min = -6;
+  const max = 10;
+  const min = -10;
   return (Math.floor(Math.pow(10, 14) * Math.random() * Math.random()) % (max - min + 1)) + min
 }
 
 const randEl = () => {
   const num = randomNum()
-  const plus = Math.round(Math.random())
+  const plus = true || Math.round(Math.random())
   return plus ? num : -num
 }
 
